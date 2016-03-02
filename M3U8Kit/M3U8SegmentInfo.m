@@ -26,14 +26,14 @@
 }
 
 - (NSURL *)mediaURL {
-    return [NSURL URLWithString:self.URI relativeToURL:self.baseURL];
+    return [NSURL URLWithString:self.uri relativeToURL:self.baseURL];
 }
 
 - (NSTimeInterval)duration {
     return [self.dictionary[M3U8_EXTINF_DURATION] doubleValue];
 }
 
-- (NSString *)URI {
+- (NSString *)uri {
     return self.dictionary[M3U8_EXTINF_URI];
 }
 

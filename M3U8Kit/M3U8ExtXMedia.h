@@ -36,7 +36,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)type;
-- (NSString *)URI;
+- (NSString *)uri;
 - (NSString *)groupId;
 - (NSString *)language;
 - (NSString *)assocLanguage;

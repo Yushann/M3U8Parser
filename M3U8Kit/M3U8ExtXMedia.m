@@ -29,7 +29,7 @@
     return self.dictionary[M3U8_EXT_X_MEDIA_TYPE];
 }
 
-- (NSString *)URI {
+- (NSString *)uri {
     return self.dictionary[M3U8_EXT_X_MEDIA_URI];
 }
 
@@ -70,7 +70,7 @@
 }
 
 - (NSString *)m3u8UrlStr {
-    return [NSURL URLWithString:self.URI relativeToURL:[self baseURL]].absoluteString;
+    return [NSURL URLWithString:self.uri relativeToURL:[self baseURL]].absoluteString;
 }
 
 @end

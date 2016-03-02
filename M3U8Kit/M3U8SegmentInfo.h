@@ -26,7 +26,7 @@
 @interface M3U8SegmentInfo : NSObject
 
 @property (readonly, nonatomic) NSTimeInterval duration;
-@property (readonly, nonatomic) NSString *URI;
+@property (readonly, nonatomic) NSString *uri;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
